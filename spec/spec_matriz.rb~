@@ -10,10 +10,9 @@ before :each do
         end
 
    it "Se deberia poder sumar dos matrices de enteros" do
-         
-       
+	@obj_1.+(@obj_2).should==Matriz.new(3,2,8)
 	#ERROR EN EL 5
-	@obj_1.+(@obj_2).should==Matriz.new(3,2,5)
+	#@obj_1.+(@obj_2).should==Matriz.new(3,2,5)
    end
 
  
