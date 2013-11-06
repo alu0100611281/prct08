@@ -15,6 +15,10 @@ before :each do
 	#@obj_1.+(@obj_2).should==Matriz.new(3,2,5) 
    end
 
+  it "Se debe poder multiplicar dos matrices de Enteros" do
+	#ERROR EN EL 11
+	@obj_3.*(@obj_4).should == Matriz.new(3, 3, 11)
+  end 
  
 
 end
