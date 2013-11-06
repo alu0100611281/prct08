@@ -46,6 +46,24 @@ attr_reader :col, :fil
         return operacion
         end   
 
+#MULTIPLICACION
+       def * (o) 
+        raise TypeError unless (@fil==o.col)
+        
+        operacion= Matriz.new(@fil,@col,0)
+        for i in (0...@fil)
+             for j in(0...@col)
+                suma=self[i][0]*o[0][j]
+                for k in (1...@col)
+                    suma+=self[i][k]*o[k][j]
+                end
+                operacion[i][j]=suma
+            end
+        end        
+        operacion        
+      end
+end
+
 end
 
 
