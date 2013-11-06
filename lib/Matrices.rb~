@@ -33,19 +33,6 @@ attr_reader :col, :fil
             end
         end
 
-#SUMA
-        def +(o)
-        raise TypeError unless ((@fil==o.fil) && (@col==o.col))
-         
-        operacion= Matriz.new(@fil,@col,0)
-         for i in (0...@fil)
-             for j in(0...@col)
-                  operacion[i][j]=self[i][j]+o[i][j]
-             end
-         end
-        return operacion
-        end   
-
 end
 
 
